@@ -1,0 +1,15 @@
+[submodule "quicksilver"]
+	path = quicksilver
+	url = https://github.com/audacious-software/Quicksilver-Django.git
+[submodule "simple_messaging"]
+	path = simple_messaging
+	url = https://github.com/audacious-software/Simple-Messaging-Django.git
+[submodule "django_dialog_engine"]
+	path = django_dialog_engine
+	url = https://github.com/audacious-software/Django-Dialog-Engine.git
+[submodule "django_dialog_engine_builder"]
+	path = django_dialog_engine_builder
+	url = https://github.com/audacious-software/Django-Dialog-Engine-Builder.git
+[submodule "simple_messaging_dialog_support"]
+	path = simple_messaging_dialog_support
+	url = https://github.com/audacious-software/Simple-Messaging-Dialog-Engine-Support.git
