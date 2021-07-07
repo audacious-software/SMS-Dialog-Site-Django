@@ -32,7 +32,7 @@ jobs:
             pip install -r requirements.txt --progress-bar off
             git submodule init
             git submodule update
-            cp mha/circle_settings.py mha/local_settings.py
+            cp sms_site/circle_settings.py sms_site/local_settings.py
             pylint django_dialog_engine
             pylint django_dialog_engine_builder
             pylint quicksilver

@@ -1,1 +1,1 @@
-# Northwestern-MHA
+# SMS Starter Site
