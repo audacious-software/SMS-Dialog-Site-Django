@@ -69,7 +69,7 @@ This will restart the task execute on restart or interruption. Note that if Quic
 
 **Step 9:** Set up Apache: At this point, you are ready to configure Apache to serve your site. 
 
-Be sure that you've installed a mod_wsgi module that is compatible with Python 3. If you do not have a compatible module, uninstall the existing module and follow the instructions at the mod_wsgi site (https://pypi.org/project/mod-wsgi/) to compile and install a compatible version.
+Be sure that you've installed a mod_wsgi module that is compatible with Python 3. If you do not have a compatible module, uninstall the existing module and follow the instructions at [the mod_wsgi site](https://pypi.org/project/mod-wsgi/) to compile and install a compatible version.
 
 To connect Apache to Django, create a suitable virtual host and add the following directives:
 
