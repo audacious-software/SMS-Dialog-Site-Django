@@ -33,7 +33,7 @@ PyYAML==5.4.1
 requests==2.25.1
 six==1.16.0
 smmap==4.0.0
-sqlparse==0.4.1
+sqlparse==0.4.2
 stevedore==3.3.0
 toml==0.10.2
 twilio==6.59.1
