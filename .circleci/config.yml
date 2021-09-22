@@ -48,7 +48,6 @@ jobs:
           name: Test dialog content
           command: |
             . /home/circleci/venv/bin/activate
-            cd ..
             npm install -g -s botium-cli botium-core
             export BOTIUM_DDE_DIALOG_SCRIPT_PATH="./django_dialog_engine/botium/dialog_scripts/hello_world.json"
             export BOTIUM_DDE_DIALOG_USER_ID="circle-ci:tester"
