@@ -129,3 +129,6 @@ dmypy.json
 .pyre/
 
 /static/
+/node_modules/
+package-lock.json
+
