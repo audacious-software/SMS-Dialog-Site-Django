@@ -29,13 +29,13 @@ jobs:
       - run:
           name: Build and validate
           command: |
+            git submodule init
+            git submodule update
             python3 -m venv /home/circleci/venv
             . /home/circleci/venv/bin/activate
             pip install -r requirements.txt --progress-bar off
             pip install -r simple_messaging_twilio/requirements.txt --progress-bar off
             pip install -r simple_messaging_azure/requirements.txt --progress-bar off
-            git submodule init
-            git submodule update
             cp sms_site/circle_settings.py sms_site/local_settings.py
             python manage.py migrate
             python manage.py test
