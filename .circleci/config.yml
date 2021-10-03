@@ -41,6 +41,8 @@ jobs:
             pylint django_dialog_engine_builder
             pylint quicksilver
             pylint simple_messaging
+            pylint simple_messaging_twilio
+            pylint simple_messaging_azure
             pylint dashboard
             pylint simple_messaging_dialog_support
             bandit -r .
