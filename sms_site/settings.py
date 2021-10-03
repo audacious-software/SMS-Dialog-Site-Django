@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'quicksilver',
     'simple_messaging',
     'simple_messaging_dialog_support',
+    'simple_messaging_azure',
+    'simple_messaging_twilio',
     'dashboard',
 ]
 
