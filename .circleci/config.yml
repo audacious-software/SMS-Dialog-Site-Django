@@ -29,7 +29,7 @@ jobs:
       - run:
           name: Build and validate
           command: |
-            apt-get update -y && apt-get install -y libldap2-dev libsasl2-dev ldap-utils tox libssl-dev
+            sudo apt-get update -y && sudo apt-get install -y libldap2-dev libsasl2-dev ldap-utils libssl-dev libzbar-dev
             git submodule init
             git submodule update
             python3 -m venv /home/circleci/venv
