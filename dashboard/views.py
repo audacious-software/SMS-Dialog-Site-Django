@@ -36,7 +36,7 @@ def dashboard_home(request):
         completed_count += 1
 
     context['average_session_duration'] = cumulative_duration / completed_count
-    context['average_session_duration_humanized'] = humanize.naturaldelta(datetime.timedelta(seconds=(cumulative_duration / completed_count)))
+    context['average_session_duration_humanized'] = humanize.naturaldelta(datetime.timedelta(seconds=(cumulative_duration / completed_count))) # pylint: disable=superfluous-parens
 
     context['incoming_messages'] = IncomingMessage.objects.all()
     context['outgoing_messages_sent'] = OutgoingMessage.objects.exclude(sent_date=None)
