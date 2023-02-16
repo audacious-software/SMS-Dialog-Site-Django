@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_dialog_engine',
     'django_dialog_engine_builder',
+    'nagios_monitor',
     'quicksilver',
     'simple_messaging',
     'simple_messaging_dialog_support',
@@ -129,6 +130,10 @@ MEDIA_ROOT = str(BASE_DIR) + '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 PHONE_REGION = 'US'
+
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 from .local_settings import *
 

@@ -19,3 +19,6 @@
 [submodule "simple_messaging_azure"]
 	path = simple_messaging_azure
 	url = https://github.com/audacious-software/Simple-Messaging-Django-Azure.git
+[submodule "nagios_monitor"]
+	path = nagios_monitor
+	url = https://github.com/audacious-software/Django-Nagios-Monitoring.git
