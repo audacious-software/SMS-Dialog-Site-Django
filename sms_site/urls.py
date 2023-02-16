@@ -26,4 +26,5 @@ urlpatterns = [
     url(r'^builder/', include('django_dialog_engine_builder.urls')),
     url(r'^messages/', include('simple_messaging.urls')),
     url(r'^dashboard/', include('dashboard.urls')),
+    url(r'^quicksilver/', include('quicksilver.urls')),
 ]

@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_dialog_engine',
     'django_dialog_engine_builder',
+    'nagios_monitor',
     'quicksilver',
     'simple_messaging',
     'simple_messaging_dialog_support',
@@ -114,11 +115,14 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = str(BASE_DIR) + '/static/'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = str(BASE_DIR) + '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -126,6 +130,10 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 PHONE_REGION = 'US'
+
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 from .local_settings import *
 
