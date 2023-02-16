@@ -1,7 +1,9 @@
+wheel
 -r django_dialog_engine/requirements.txt
 -r django_dialog_engine_builder/requirements.txt
 -r quicksilver/requirements.txt
 -r simple_messaging/requirements.txt
+-r simple_messaging_azure/requirements.txt
 -r simple_messaging_dialog_support/requirements.txt
 -r simple_messaging_twilio/requirements.txt
 humanize==1.0.0; python_version < '3.0'
