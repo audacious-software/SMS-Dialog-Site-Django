@@ -37,6 +37,9 @@ jobs:
             pip install -r simple_messaging_twilio/requirements.txt --progress-bar off
             pip install -r simple_messaging_azure/requirements.txt --progress-bar off
             cp sms_site/circle_settings.py sms_site/local_settings.py
+            mkdir -p media/simple_data_export_uploads
+            mkdir -p media/incoming_message_media
+            mkdir -p media/outgoing_message_media
             python manage.py migrate
             python manage.py test
             pylint django_dialog_engine
