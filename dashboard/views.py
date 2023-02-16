@@ -35,8 +35,12 @@ def dashboard_home(request):
         cumulative_duration += (session.finished - session.started).total_seconds()
         completed_count += 1
 
-    context['average_session_duration'] = cumulative_duration / completed_count
-    context['average_session_duration_humanized'] = humanize.naturaldelta(datetime.timedelta(seconds=(cumulative_duration / completed_count))) # pylint: disable=superfluous-parens
+    try:
+        context['average_session_duration'] = cumulative_duration / completed_count
+        context['average_session_duration_humanized'] = humanize.naturaldelta(datetime.timedelta(seconds=(cumulative_duration / completed_count))) # pylint: disable=superfluous-parens
+    except ZeroDivisionError:
+        context['average_session_duration_humanized'] = '(No data yet)'
+        context['average_session_duration'] = -1
 
     context['incoming_messages'] = IncomingMessage.objects.all()
     context['outgoing_messages_sent'] = OutgoingMessage.objects.exclude(sent_date=None)

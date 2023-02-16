@@ -8,3 +8,5 @@ wheel
 -r simple_messaging_twilio/requirements.txt
 humanize==1.0.0; python_version < '3.0'
 humanize==3.13.1; python_version >= '3.0'
+django-auth-ldap==4.0.0; python_version < '3.7'
+django-auth-ldap==4.1.0; python_version >= '3.7'
