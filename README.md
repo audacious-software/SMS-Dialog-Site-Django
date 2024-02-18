@@ -1,4 +1,4 @@
-# Plan Safe (was SMS Starter Site)
+# Simple SMS Dialog Site
 
 This repository is intended to serve as a starting point for creating interactive SMS-drive text message experiences using Django. It brings together the following technologies from Audacious Software to provide a foundation for more specialized work:
 
