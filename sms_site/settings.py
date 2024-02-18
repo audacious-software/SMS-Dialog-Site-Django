@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'prettyjson',
     'django_dialog_engine',
     'django_dialog_engine_builder',
     'nagios_monitor',
@@ -134,6 +135,8 @@ PHONE_REGION = 'US'
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
+
+SIMPLE_MESSAGING_COUNTRY_CODE = 'US'
 
 from .local_settings import *
 
