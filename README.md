@@ -5,7 +5,7 @@ This repository is intended to serve as a starting point for creating interactiv
 * [Simple Messaging for Django](https://github.com/audacious-software/Simple-Messaging-Django): A self-contained Django app for sending and receiving SMS text messages via services such as Twilio.
 * [Django Dialog Engine](https://github.com/audacious-software/Django-Dialog-Engine) (DDE): An abstract state-machine system for conducting structured dialogs between two parties. This component provides the base foundation for running real-time dialogs.
 * [Django Dialog Engine Builder](https://github.com/audacious-software/Django-Dialog-Engine-Builder): An editing interface for creating and modifying dialogs used by Django Dialog Engine. This provides a user interface for constructing entire dialogs using the structures provided by DDE to generate the JSON-based dialog definitions used by that framework.
-*	[Simple Messaging Dialog Support](https://github.com/audacious-software/Simple-Messaging-Dialog-Engine-Support): A bridge app that allows Django Dialog Engine to be used with Simple Messaging for Django. This app provides the relevant infrastructure that enables interaction between the two components.
+*	[Simple Messaging Dialog Support](https://github.com/audacious-software/Simple-Messaging-Dialog-Engine-Support): Bridging infrastructure that allows Django Dialog Engine to be used with Simple Messaging for Django. This app provides the relevant infrastructure that enables interaction between the two components.
 *	[Quicksilver](https://github.com/audacious-software/Quicksilver-Django): A task-scheduling app that replaces CRON-based systems to enable second-level task execution for jobs such as sending and receiving real-time responses from the Django Dialog Engine.
 
 In addition to the components above, this site also includes a basic dashboard app that serves as a starting point for building more specific user interfaces to the system.
@@ -97,7 +97,12 @@ From here, you should be able log into the site, create new dialogs, schedule di
 If you have any questions or encounter any difficulties, e-mail [chris@audacious-software.com](mailto:chris@audacious-software.com) for assistance.
 
 
+## Licensing Information
 
+Copyright 2021-2024 Audacious Software
 
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
+[http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
