@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'simple_messaging_twilio',
     'simple_generative_ai',
     'dashboard',
-    'medl_co',
 ]
 
 MIDDLEWARE = [
@@ -141,4 +140,7 @@ CSRF_COOKIE_SECURE = True
 SIMPLE_MESSAGING_COUNTRY_CODE = 'US'
 
 from .local_settings import *
+
+for app in ADDITIONAL_APPS:
+    INSTALLED_APPS.append(app)
 
