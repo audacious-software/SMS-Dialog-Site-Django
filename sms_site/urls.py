@@ -13,7 +13,14 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.conf.urls import include, url
+
+import sys
+
+if sys.version_info[0] > 2:
+    from django.urls import re_path as url, include # pylint: disable=no-name-in-module
+else:
+    from django.conf.urls import url, include
+
 from django.contrib import admin
 from django.urls import path
 
@@ -27,4 +34,5 @@ urlpatterns = [
     url(r'^messages/', include('simple_messaging.urls')),
     url(r'^dashboard/', include('dashboard.urls')),
     url(r'^quicksilver/', include('quicksilver.urls')),
+    url(r'^generative-ai/', include('simple_generative_ai.urls')),
 ]

@@ -114,9 +114,18 @@ def dashboard_start(request):
         destination = request.POST.get('destination', '')
         identifier = request.POST.get('identifier', '')
 
+        prefix = ''
+
+        if destination.startswith('whatsapp:'):
+            prefix = 'whatsapp:'
+
+            destination = destination.replace('whatsapp:', '')
+
         parsed = phonenumbers.parse(destination, settings.PHONE_REGION)
 
         destination = phonenumbers.format_number(parsed, phonenumbers.PhoneNumberFormat.E164)
+
+        destination = '%s%s' % (prefix, destination)
 
         script = DialogScript.objects.filter(identifier=identifier).first()
 
@@ -129,7 +138,8 @@ def dashboard_start(request):
                 session.finished = timezone.now()
                 session.save()
 
-                session.dialog.finish('user_cancelled')
+                if session.dialog is not None:
+                    session.dialog.finish('user_cancelled')
 
             dialog_session = DialogSession.objects.create(destination=destination, dialog=new_dialog, started=timezone.now(), last_updated=timezone.now())
 

@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'simple_messaging_dialog_support',
     'simple_messaging_azure',
     'simple_messaging_twilio',
+    'simple_generative_ai',
     'dashboard',
+    'medl_co',
 ]
 
 MIDDLEWARE = [
