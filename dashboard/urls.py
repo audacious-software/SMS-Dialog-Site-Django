@@ -3,9 +3,9 @@
 import sys
 
 if sys.version_info[0] > 2:
-    from django.urls import re_path as url, include # pylint: disable=no-name-in-module
+    from django.urls import re_path as url # pylint: disable=no-name-in-module
 else:
-    from django.conf.urls import url, include # pylint: disable=unused-import
+    from django.conf.urls import url # pylint: disable=unused-import
 
 from .views import dashboard_home, dashboard_dialogs, dashboard_logout, dashboard_create, \
                    dashboard_delete, dashboard_start
