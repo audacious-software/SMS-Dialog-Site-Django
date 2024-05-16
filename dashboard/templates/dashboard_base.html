@@ -35,11 +35,11 @@
             .mdc-top-app-bar {
                 z-index: 7;
             }
-            
+
             a {
                 text-decoration: none;
             }
-            
+
             .floating-action-button {
                 position: absolute;
                 bottom: 16px;
@@ -102,7 +102,7 @@
                 {% endblock %}
             </main>
         </div>
-        
+
         <div class="mdc-dialog" role="alertdialog" aria-modal="true" aria-labelledby="dialog-title" aria-describedby="dialog-content" id="base-dialog">
             <div class="mdc-dialog__container">
                 <div class="mdc-dialog__surface">
@@ -119,9 +119,9 @@
             </div>
             <div class="mdc-dialog__scrim"></div>
         </div>
-        
+
         {% block 'js_init' %}
-            <!-- <script data-main="{% static 'builder-js/js/app/home.js' %}" src="{% static 'builder-js/vendor/require.js' %}"></script> -->
+            <script data-main="{% static 'builder-js/js/app/home.js' %}" src="{% static 'builder-js/vendor/require.js' %}"></script>
         {% endblock %}
     </body>
 </html>

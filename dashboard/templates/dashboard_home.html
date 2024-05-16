@@ -1,8 +1,14 @@
 {% extends 'dashboard_base.html' %}
 {% load static %}
+{% load simple_dashboard %}
 {% block 'page_title' %}Home | SMS Dashboard{% endblock %}
 {% block 'navigation_title' %}Home{% endblock %}
 {% block 'main_content' %}
+	<div class="mdc-layout-grid">
+		<div class="mdc-layout-grid__inner">
+			{% simple_dashboard_active_signals %}
+		</div>
+	</div>
 	<div class="mdc-layout-grid">
 		<div class="mdc-layout-grid__inner">
 			<div class=" mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
@@ -16,7 +22,7 @@
 					<div class="mdc-typography mdc-typography--headline6">Sessions</div>
 					<p class="mdc-typography mdc-typography--body1">Active Sessions: <strong>{{ active_sessions.count }}</strong></p>
 					<p class="mdc-typography mdc-typography--body1">Completed Sessions: <strong>{{ completed_sessions.count }}</strong></p>
-					
+
 					{% if oldest_active_session %}
 						<p class="mdc-typography mdc-typography--body1">Oldest Session: <strong>{{ oldest_active_session.dialog }}</strong> (since {{ oldest_active_session.started }})</p>
 					{% endif %}

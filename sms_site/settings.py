@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'simple_messaging_azure',
     'simple_messaging_twilio',
     'simple_generative_ai',
+    'simple_dashboard',
     'dashboard',
 ]
 

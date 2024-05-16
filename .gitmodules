@@ -25,3 +25,6 @@
 [submodule "simple_generative_ai"]
 	path = simple_generative_ai
 	url = https://github.com/audacious-software/Simple-Generative-AI-Django.git
+[submodule "simple_dashboard"]
+	path = simple_dashboard
+	url = https://github.com/audacious-software/Simple-Dashboard-Django.git
