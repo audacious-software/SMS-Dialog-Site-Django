@@ -1,9 +1,7 @@
 # pylint: disable=no-member, line-too-long
 
-import datetime
 import json
 
-import humanize
 import phonenumbers
 
 from django.conf import settings
@@ -17,34 +15,11 @@ from django.utils.text import slugify
 
 from django_dialog_engine.models import DialogScript, Dialog
 
-from simple_messaging.models import IncomingMessage, OutgoingMessage
 from simple_messaging_dialog_support.models import DialogSession
 
 @login_required
 def dashboard_home(request):
     context = {}
-
-    context['active_sessions'] = DialogSession.objects.filter(finished=None)
-    context['completed_sessions'] = DialogSession.objects.exclude(finished=None)
-    context['oldest_active_session'] = DialogSession.objects.filter(finished=None).order_by('started').first()
-
-    cumulative_duration = 0
-    completed_count = 0
-
-    for session in context['completed_sessions']:
-        cumulative_duration += (session.finished - session.started).total_seconds()
-        completed_count += 1
-
-    try:
-        context['average_session_duration'] = cumulative_duration / completed_count
-        context['average_session_duration_humanized'] = humanize.naturaldelta(datetime.timedelta(seconds=(cumulative_duration / completed_count))) # pylint: disable=superfluous-parens
-    except ZeroDivisionError:
-        context['average_session_duration_humanized'] = '(No data yet)'
-        context['average_session_duration'] = -1
-
-    context['incoming_messages'] = IncomingMessage.objects.all()
-    context['outgoing_messages_sent'] = OutgoingMessage.objects.exclude(sent_date=None)
-    context['outgoing_messages_pending'] = OutgoingMessage.objects.filter(sent_date=None)
 
     return render(request, 'dashboard_home.html', context=context)
 
