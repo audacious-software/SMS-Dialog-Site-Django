@@ -43,6 +43,7 @@ jobs:
             mkdir -p media/outgoing_message_media
             python manage.py migrate
             python manage.py install_quicksilver_tasks
+            python manage.py simple_dashboard_update_values
             python manage.py test
             pylint django_dialog_engine
             pylint django_dialog_engine_builder
