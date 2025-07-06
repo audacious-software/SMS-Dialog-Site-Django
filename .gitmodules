@@ -22,3 +22,18 @@
 [submodule "nagios_monitor"]
 	path = nagios_monitor
 	url = https://github.com/audacious-software/Django-Nagios-Monitoring.git
+[submodule "simple_messaging_loopback"]
+	path = simple_messaging_loopback
+	url = https://github.com/audacious-software/Simple-Messaging-Django-Loopback.git
+[submodule "simple_generative_ai"]
+	path = simple_generative_ai
+	url = https://github.com/audacious-software/Simple-Generative-AI-Django.git
+[submodule "simple_dashboard"]
+	path = simple_dashboard
+	url = https://github.com/audacious-software/Simple-Dashboard-Django.git
+[submodule "docker_utils"]
+	path = docker_utils
+	url = https://github.com/bric-digital/Docker-Utils-Django.git
+[submodule "docker/simple_messaging_switchboard"]
+	path = simple_messaging_switchboard
+	url = https://github.com/audacious-software/Simple-Messaging-Switchboard.git
