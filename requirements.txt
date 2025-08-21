@@ -12,6 +12,7 @@ wheel
 -r simple_messaging_loopback/requirements.txt
 -r simple_messaging_switchboard/requirements.txt
 -r simple_messaging_twilio/requirements.txt
+-r simple_research/requirements.txt
 -r simple_scheduling/requirements.txt
 -r url_shortener/requirements.txt
 django-auth-ldap==4.0.0; python_version < '3.7'
