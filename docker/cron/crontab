@@ -1,0 +1,10 @@
+SHELL=/bin/bash
+MAILTO=CRON_MAIL_RECIPIENT
+MAILFROM=SMS_SITE_FROM_EMAIL
+
+# * * * * *    root   . /etc/environment && . /app/venv/bin/activate && python3 /app/sms_site/manage.py incremental_backup
+* * * * *    root   . /etc/environment && . /app/venv/bin/activate && echo "run_task_queue[default]" >> /var/log/cron.log && python3 /app/sms_site/manage.py run_task_queue &>> /var/log/cron.log
+* * * * *    root   . /etc/environment && . /app/venv/bin/activate && echo "run_task_queue[data-export]" >> /var/log/cron.log && python3 /app/sms_site/manage.py run_task_queue --task-queue data-export &>> /var/log/cron.log
+* * * * *    root   . /etc/environment && . /app/venv/bin/activate && echo "run_task_queue[message-scheduling]" >> /var/log/cron.log && python3 /app/sms_site/manage.py run_task_queue --task-queue message-scheduling &>> /var/log/cron.log
+* * * * *    root   . /etc/environment && . /app/venv/bin/activate && echo "run_task_queue[simple-dashboard]" >> /var/log/cron.log && python3 /app/sms_site/manage.py run_task_queue --task-queue simple-dashboard &>> /var/log/cron.log
+# * * * * *    source /app/venv/bin/activate && python3 /app/sms_site/manage.py run_task_queue --task-queue mooclet-updates

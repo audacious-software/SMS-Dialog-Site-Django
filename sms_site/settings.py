@@ -34,13 +34,20 @@ INSTALLED_APPS = [
     'prettyjson',
     'django_dialog_engine',
     'django_dialog_engine_builder',
+    'docker_utils',
     'nagios_monitor',
     'quicksilver',
+    'simple_dashboard',
+    'simple_research',
+    'simple_generative_ai',
     'simple_messaging',
     'simple_messaging_dialog_support',
+    'simple_messaging_switchboard',
     'simple_messaging_azure',
+    'simple_messaging_loopback',
     'simple_messaging_twilio',
-    'dashboard',
+    'simple_scheduling',
+    'url_shortener',
 ]
 
 MIDDLEWARE = [

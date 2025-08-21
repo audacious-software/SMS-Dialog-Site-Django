@@ -1,0 +1,69 @@
+name: sms-site
+services:
+  # db:
+  #  image: postgres:16.3
+  #  hostname: db
+  #  volumes:
+  #    - db:/var/lib/postgresql/data
+  #  environment:
+  #    - POSTGRES_DB=${PG_DB}
+  #    - POSTGRES_USER=${PG_USER}
+  #    - POSTGRES_PASSWORD=${PG_PASSWORD}
+  #  healthcheck:
+  #    test: "pg_isready -U ${PG_USER} -d ${PG_DB}"
+  #    interval: 1s
+  #    timeout: 5s
+  #    retries: 10
+
+  django:
+    platform: linux/amd64
+    hostname: django
+    build:
+      context: ..
+      dockerfile: docker/django/Dockerfile
+    env_file: .env
+    command: bash /app/django.sh
+    volumes:
+      - media:/app/sms_site/media
+      - static:/app/sms_site/static
+      - db:/app/sms_site/database
+    # depends_on:
+    #  db:
+    #    condition: service_healthy
+
+  nginx:
+    image: nginx
+    env_file: .env
+    volumes:
+      - ./nginx/templates:/etc/nginx/templates
+      - media:/var/www/media
+      - static:/var/www/static
+    ports:
+      - "${NGINX_WEB_PORT}:${NGINX_WEB_PORT}"
+    environment:
+      - NGINX_WEB_HOST=${NGINX_WEB_HOST}
+      - NGINX_WEB_PORT=${NGINX_WEB_PORT}
+      - DJANGO_WEB_PORT=${DJANGO_WEB_PORT}
+    depends_on:
+      django:
+        condition: service_started
+
+  cron:
+    platform: linux/amd64
+    build:
+      context: ..
+      dockerfile: docker/cron/Dockerfile
+    env_file: .env
+    command: bash /app/run.sh
+    volumes:
+      - media:/app/sms_site/media
+      - static:/app/sms_site/static
+      - db:/app/sms_site/database
+    depends_on:
+      django:
+        condition: service_started
+
+volumes:
+  db:
+  media:
+  static:

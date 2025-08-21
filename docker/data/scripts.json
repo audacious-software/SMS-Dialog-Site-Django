@@ -1,0 +1,79 @@
+[
+{
+  "model": "django_dialog_engine.dialogscript",
+  "pk": 1,
+  "fields": {
+    "name": "Default Dialog Template",
+    "created": "2021-10-04T13:57:55.420Z",
+    "updated": null,
+    "embeddable": false,
+    "identifier": "default",
+    "labels": "",
+    "definition": [
+      {
+        "id": "dialog-start",
+        "type": "begin",
+        "next_id": "echo-1",
+        "builder_group": "Dialog"
+      },
+      {
+        "id": "echo-1",
+        "name": "Hello World",
+        "type": "echo",
+        "message": "Hello World",
+        "next_id": "a3e2df39-8258-47b4-90d4-e5e59df410ae",
+        "builder_group": "Dialog"
+      },
+      {
+        "id": "dialog-end",
+        "type": "end",
+        "builder_group": "Dialog"
+      },
+      {
+        "id": "a3e2df39-8258-47b4-90d4-e5e59df410ae",
+        "name": "Test Branch",
+        "type": "branch-prompt",
+        "prompt": "Give me a number between 0 and 9",
+        "actions": [
+          {
+            "action": "0ea7c954-5502-406d-9f61-0d9dbec1a8ed",
+            "pattern": "^[1234567890]"
+          }
+        ],
+        "timeout": 30,
+        "no_match": "7073e8f5-7227-4941-9adc-752eede2d4a0",
+        "builder_group": "Main",
+        "timeout_node_id": "8d491b70-1fe0-4f3c-b125-c133a49a2ec2",
+        "timeout_iterations": 1
+      },
+      {
+        "id": "0ea7c954-5502-406d-9f61-0d9dbec1a8ed",
+        "name": "Thanks",
+        "type": "echo",
+        "context": "(Context goes here...)",
+        "message": "Got it - thanks!",
+        "next_id": "dialog-end",
+        "builder_group": "Main"
+      },
+      {
+        "id": "7073e8f5-7227-4941-9adc-752eede2d4a0",
+        "name": "Try again",
+        "type": "echo",
+        "context": "(Context goes here...)",
+        "message": "Please try again - just a number this time!",
+        "next_id": "a3e2df39-8258-47b4-90d4-e5e59df410ae",
+        "builder_group": "Main"
+      },
+      {
+        "id": "8d491b70-1fe0-4f3c-b125-c133a49a2ec2",
+        "name": "Too Long",
+        "type": "echo",
+        "context": "(Context goes here...)",
+        "message": "You took too long - maybe next time!",
+        "next_id": "dialog-end",
+        "builder_group": "Main"
+      }
+    ]
+  }
+}
+]

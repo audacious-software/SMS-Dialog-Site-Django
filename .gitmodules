@@ -37,3 +37,12 @@
 [submodule "docker/simple_messaging_switchboard"]
 	path = simple_messaging_switchboard
 	url = https://github.com/audacious-software/Simple-Messaging-Switchboard.git
+[submodule "url_shortener"]
+	path = url_shortener
+	url = https://github.com/audacious-software/Django-URL-Shortener.git
+[submodule "simple_scheduling"]
+	path = simple_scheduling
+	url = https://github.com/audacious-software/Simple-Scheduling-Django.git
+[submodule "simple_research"]
+	path = simple_research
+	url = https://github.com/bric-digital/Simple-Research-Django.git

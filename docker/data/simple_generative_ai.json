@@ -1,0 +1,13 @@
+[
+{
+  "model": "simple_generative_ai.generativeaimodel",
+  "pk": 1,
+  "fields": {
+    "model_type": "openai_chat_legacy",
+    "model_name": "CK Test Model",
+    "model_id": "ck-test",
+    "enabled": true,
+    "model_parameters": "{\r\n\"openai_api_key\": \"YOUR-KEY-HERE\",\r\n\"openai_model\": \"gpt-3.5-turbo\"\r\n}"
+  }
+}
+]
