@@ -32,7 +32,7 @@ SIMPLE_MESSAGING_TWILIO_PHONE_NUMBER = 'CHANGEME' # nosec
 SIMPLE_MESSAGING_COUNTRY_CODE = 'US'
 
 SILENCED_SYSTEM_CHECKS = [
-    'security.W004'
+    'security.W004',
     'simple_messaging.W002',
     'simple_messaging_switchboard.E001',
     'simple_messaging_switchboard.E002',
