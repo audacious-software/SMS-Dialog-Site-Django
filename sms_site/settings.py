@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import tempfile
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -144,6 +146,9 @@ SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
 SIMPLE_MESSAGING_COUNTRY_CODE = 'US'
+
+QUICKSILVER_LOCK_DIR = tempfile.gettempdir()
+SIMPLE_DASHBOARD_SITE_NAME = 'SMS Site'
 
 from .local_settings import *
 
