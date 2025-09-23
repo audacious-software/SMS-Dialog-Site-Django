@@ -13,9 +13,9 @@ requirejs.config({
     baseUrl: "/static/dashboard/js/app",
     paths: {
         app: '/static/dashboard/js/app',
-        material: "/static/dashboard/vendor/material-components-web-11.0.0",
-        jquery: "/static/dashboard/vendor/jquery-3.4.0.min",
-        cookie: "/static/dashboard/vendor/js.cookie"
+        material: "/static/dashboard/js/vendor/material-components-web-11.0.0",
+        jquery: "/static/dashboard/js/vendor/jquery-3.4.0.min",
+        cookie: "/static/dashboard/js/vendor/js.cookie"
     }
 });
 
@@ -44,7 +44,7 @@ requirejs(["material", "cookie", "jquery"], function(mdc, Cookies) {
     topAppBar.listen('MDCTopAppBar:nav', () => {
         drawer.open = !drawer.open;
     });
-    
+
     window.setTimeout(function() {
 	    drawer.open = true;
 	    console.log("open drawrer");
