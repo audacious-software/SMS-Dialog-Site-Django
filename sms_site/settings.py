@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'simple_dashboard',
     'simple_research',
     'simple_generative_ai',
+    'simple_data_export',
     'simple_messaging',
     'simple_messaging_dialog_support',
     'simple_messaging_switchboard',
@@ -149,6 +150,9 @@ SIMPLE_MESSAGING_COUNTRY_CODE = 'US'
 
 QUICKSILVER_LOCK_DIR = tempfile.gettempdir()
 SIMPLE_DASHBOARD_SITE_NAME = 'SMS Site'
+
+SIMPLE_RESEARCH_LOGIN_EXPIRE_SECONDS = 3600
+SIMPLE_RESEARCH_DEFAULT_COUNTRY_CODE = PHONE_REGION
 
 from .local_settings import *
 

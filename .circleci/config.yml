@@ -51,6 +51,7 @@ jobs:
             pylint docker_utils
             pylint nagios_monitor
             pylint quicksilver
+            pylint simple_data_export
             pylint simple_messaging
             pylint simple_messaging_azure
             pylint simple_messaging_dialog_support
@@ -121,6 +122,7 @@ jobs:
             pylint docker_utils
             pylint nagios_monitor
             pylint quicksilver
+            pylint simple_data_export
             pylint simple_messaging
             pylint simple_messaging_azure
             pylint simple_messaging_dialog_support
@@ -191,6 +193,7 @@ jobs:
             pylint docker_utils
             pylint nagios_monitor
             pylint quicksilver
+            pylint simple_data_export
             pylint simple_messaging
             pylint simple_messaging_azure
             pylint simple_messaging_dialog_support

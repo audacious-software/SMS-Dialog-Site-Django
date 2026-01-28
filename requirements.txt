@@ -5,6 +5,7 @@ wheel
 -r nagios_monitor/requirements.txt
 -r quicksilver/requirements.txt
 -r simple_dashboard/requirements.txt
+-r simple_data_export/requirements.txt
 -r simple_generative_ai/requirements.txt
 -r simple_messaging/requirements.txt
 -r simple_messaging_azure/requirements.txt

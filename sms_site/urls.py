@@ -37,6 +37,7 @@ urlpatterns = [
     url('^research/', include('simple_research.urls')),
     url('^quicksilver/', include('quicksilver.urls')),
     url('^docker/', include('docker_utils.urls')),
+    url('^data/', include('simple_data_export.urls')),
     url('^u/', include('url_shortener.urls')),
     url(r'^$', RedirectView.as_view(pattern_name='simple_dashboard_home', permanent=False)),
 ]
