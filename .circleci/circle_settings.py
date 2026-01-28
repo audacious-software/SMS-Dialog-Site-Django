@@ -39,3 +39,4 @@ SILENCED_SYSTEM_CHECKS = [
 ]
 
 SITE_URL = 'http://www.example.com'
+SIMPLE_DATA_EXPORTER_SITE_NAME = 'Circle CI Test'
