@@ -37,3 +37,5 @@ SILENCED_SYSTEM_CHECKS = [
     'simple_messaging_switchboard.E001',
     'simple_messaging_switchboard.E002',
 ]
+
+SITE_URL = 'http://www.example.com'
