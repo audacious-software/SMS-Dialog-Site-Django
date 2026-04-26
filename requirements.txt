@@ -17,4 +17,6 @@ wheel
 -r simple_scheduling/requirements.txt
 -r url_shortener/requirements.txt
 django-auth-ldap==4.0.0; python_version < '3.7'
-django-auth-ldap==4.1.0; python_version >= '3.7'
+django-auth-ldap==4.1.0; python_version == '3.7'
+django-auth-ldap==5.0.0; python_version == '3.8'
+django-auth-ldap==5.3.0; python_version >= '3.9'
