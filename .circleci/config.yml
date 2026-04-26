@@ -156,7 +156,7 @@ jobs:
           path: test-reports/
           destination: python_app
 
-  build-38:
+  build-39:
     docker:
       - image: cimg/python:3.9
       - image: cimg/postgres:14.18-postgis
@@ -298,7 +298,7 @@ jobs:
           path: test-reports/
           destination: python_app
 
-  build-38:
+  build-37:
     docker:
       - image: cimg/python:3.7
       - image: cimg/postgres:14.18-postgis
