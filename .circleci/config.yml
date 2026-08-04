@@ -40,6 +40,7 @@ jobs:
             git submodule update
             python3 -m venv /home/circleci/venv
             . /home/circleci/venv/bin/activate
+            pip install --upgrade pip setuptools wheel
             pip install -r requirements.txt --progress-bar off
             pip install -r simple_messaging_twilio/requirements.txt --progress-bar off
             pip install -r simple_messaging_azure/requirements.txt --progress-bar off
@@ -111,6 +112,7 @@ jobs:
             git submodule update
             python3 -m venv /home/circleci/venv
             . /home/circleci/venv/bin/activate
+            pip install --upgrade pip setuptools wheel
             pip install -r requirements.txt --progress-bar off
             pip install -r simple_messaging_twilio/requirements.txt --progress-bar off
             pip install -r simple_messaging_azure/requirements.txt --progress-bar off
@@ -182,6 +184,7 @@ jobs:
             git submodule update
             python3 -m venv /home/circleci/venv
             . /home/circleci/venv/bin/activate
+            pip install --upgrade pip setuptools wheel
             pip install -r requirements.txt --progress-bar off
             pip install -r simple_messaging_twilio/requirements.txt --progress-bar off
             pip install -r simple_messaging_azure/requirements.txt --progress-bar off
@@ -253,6 +256,7 @@ jobs:
             git submodule update
             python3 -m venv /home/circleci/venv
             . /home/circleci/venv/bin/activate
+            pip install --upgrade pip setuptools wheel
             pip install -r requirements.txt --progress-bar off
             pip install -r simple_messaging_twilio/requirements.txt --progress-bar off
             pip install -r simple_messaging_azure/requirements.txt --progress-bar off
@@ -324,6 +328,7 @@ jobs:
             git submodule update
             python3 -m venv /home/circleci/venv
             . /home/circleci/venv/bin/activate
+            pip install --upgrade pip setuptools wheel
             pip install -r requirements.txt --progress-bar off
             pip install -r simple_messaging_twilio/requirements.txt --progress-bar off
             pip install -r simple_messaging_azure/requirements.txt --progress-bar off
@@ -395,6 +400,7 @@ jobs:
             git submodule update
             python3 -m venv /home/circleci/venv
             . /home/circleci/venv/bin/activate
+            pip install --upgrade pip setuptools wheel
             pip install -r requirements.txt --progress-bar off
             pip install -r simple_messaging_twilio/requirements.txt --progress-bar off
             pip install -r simple_messaging_azure/requirements.txt --progress-bar off
@@ -466,6 +472,7 @@ jobs:
             git submodule update
             python3 -m venv /home/circleci/venv
             . /home/circleci/venv/bin/activate
+            pip install --upgrade pip setuptools wheel
             pip install -r requirements.txt --progress-bar off
             pip install -r simple_messaging_twilio/requirements.txt --progress-bar off
             pip install -r simple_messaging_azure/requirements.txt --progress-bar off
