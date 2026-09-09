@@ -2,7 +2,6 @@
 
 echo "Cleaning lock files..."
 
-rm /tmp/*.lock
 rm /app/tmp/*.lock
 
 echo "Configuring e-mail server..."
