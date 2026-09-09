@@ -27,6 +27,7 @@ services:
       - media:/app/sms_site/media
       - static:/app/sms_site/static
       - db:/app/sms_site/database
+      - tmp:/app/tmp
     # depends_on:
     #  db:
     #    condition: service_healthy
@@ -59,6 +60,7 @@ services:
       - media:/app/sms_site/media
       - static:/app/sms_site/static
       - db:/app/sms_site/database
+      - tmp:/app/tmp
     depends_on:
       django:
         condition: service_started
@@ -67,3 +69,4 @@ volumes:
   db:
   media:
   static:
+  tmp:
