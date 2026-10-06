@@ -14,6 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+import re
 import sys
 
 if sys.version_info[0] > 2:
@@ -21,6 +22,7 @@ if sys.version_info[0] > 2:
 else:
     from django.conf.urls import include, url
 
+from django.conf import settings
 from django.contrib import admin
 from django.views.generic import RedirectView
 from django.urls import path
@@ -33,6 +35,7 @@ urlpatterns = [
     url('^accounts/', include('django.contrib.auth.urls')),
     url('^builder/', include('django_dialog_engine_builder.urls')),
     url('^messages/', include('simple_messaging.urls')),
+    url('^messages/dialog/support', include('simple_messaging_dialog_support.urls')),
     url('^dashboard/', include('simple_dashboard.urls')),
     url('^research/', include('simple_research.urls')),
     url('^quicksilver/', include('quicksilver.urls')),
@@ -41,3 +44,7 @@ urlpatterns = [
     url('^u/', include('url_shortener.urls')),
     url(r'^$', RedirectView.as_view(pattern_name='simple_dashboard_home', permanent=False)),
 ]
+
+# if settings.DEBUG:
+#     prefix = '__debug__'
+#     urlpatterns.append(url(r'^{}/'.format(re.escape(prefix.lstrip('/'))), include('debug_toolbar.urls'),),)
