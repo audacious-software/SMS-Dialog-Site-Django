@@ -1,4 +1,4 @@
-# Updated 2026-08-19
+# Updated 2026-10-28
 
 wheel
 -r django_dialog_engine/requirements.txt
@@ -6,6 +6,7 @@ wheel
 -r docker_utils/requirements.txt
 -r nagios_monitor/requirements.txt
 -r quicksilver/requirements.txt
+-r simple_content/requirements.txt
 -r simple_dashboard/requirements.txt
 -r simple_data_export/requirements.txt
 -r simple_generative_ai/requirements.txt

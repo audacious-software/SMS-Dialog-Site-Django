@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'docker_utils',
     'nagios_monitor',
     'quicksilver',
+    'simple_content',
     'simple_dashboard',
     'simple_research',
     'simple_generative_ai',

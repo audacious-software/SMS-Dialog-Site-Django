@@ -49,3 +49,6 @@
 [submodule "simple_data"]
 	path = simple_data_export
 	url = https://github.com/audacious-software/Simple-Data-Export-Django.git
+[submodule "simple_content"]
+	path = simple_content
+	url = https://github.com/bric-digital/Simple-Content-Django.git
