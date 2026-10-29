@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'prettyjson',
+    'markdownfield',
     'django_dialog_engine',
     'django_dialog_engine_builder',
     'docker_utils',

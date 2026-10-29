@@ -32,6 +32,7 @@ admin.site.enable_nav_sidebar = False
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('markdownfield/', include('markdownfield.urls')),
     url('^accounts/', include('django.contrib.auth.urls')),
     url('^builder/', include('django_dialog_engine_builder.urls')),
     url('^messages/', include('simple_messaging.urls')),
@@ -42,6 +43,7 @@ urlpatterns = [
     url('^docker/', include('docker_utils.urls')),
     url('^data/', include('simple_data_export.urls')),
     url('^u/', include('url_shortener.urls')),
+    url('', include('simple_content.urls')),
     url(r'^$', RedirectView.as_view(pattern_name='simple_dashboard_home', permanent=False)),
 ]
 
