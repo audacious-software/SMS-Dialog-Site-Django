@@ -56,11 +56,15 @@ jobs:
             pylint docker_utils
             pylint nagios_monitor
             pylint quicksilver
+            pylint simple_content
+            pylint simple_dashboard
             pylint simple_data_export
+            # pylint simple_generative_ai
             pylint simple_messaging
             pylint simple_messaging_azure
             pylint simple_messaging_dialog_support
             pylint simple_messaging_loopback
+            pylint simple_messaging_switchboard
             pylint simple_messaging_twilio
             pylint simple_research
             pylint simple_scheduling
@@ -128,11 +132,15 @@ jobs:
             pylint docker_utils
             pylint nagios_monitor
             pylint quicksilver
+            pylint simple_content
+            pylint simple_dashboard
             pylint simple_data_export
+            # pylint simple_generative_ai
             pylint simple_messaging
             pylint simple_messaging_azure
             pylint simple_messaging_dialog_support
             pylint simple_messaging_loopback
+            pylint simple_messaging_switchboard
             pylint simple_messaging_twilio
             pylint simple_research
             pylint simple_scheduling
@@ -200,11 +208,15 @@ jobs:
             pylint docker_utils
             pylint nagios_monitor
             pylint quicksilver
+            pylint simple_content
+            pylint simple_dashboard
             pylint simple_data_export
+            # pylint simple_generative_ai
             pylint simple_messaging
             pylint simple_messaging_azure
             pylint simple_messaging_dialog_support
             pylint simple_messaging_loopback
+            pylint simple_messaging_switchboard
             pylint simple_messaging_twilio
             pylint simple_research
             pylint simple_scheduling
@@ -272,11 +284,15 @@ jobs:
             pylint docker_utils
             pylint nagios_monitor
             pylint quicksilver
+            pylint simple_content
+            pylint simple_dashboard
             pylint simple_data_export
+            # pylint simple_generative_ai
             pylint simple_messaging
             pylint simple_messaging_azure
             pylint simple_messaging_dialog_support
             pylint simple_messaging_loopback
+            pylint simple_messaging_switchboard
             pylint simple_messaging_twilio
             pylint simple_research
             pylint simple_scheduling
@@ -344,11 +360,15 @@ jobs:
             pylint docker_utils
             pylint nagios_monitor
             pylint quicksilver
+            pylint simple_content
+            pylint simple_dashboard
             pylint simple_data_export
+            # pylint simple_generative_ai
             pylint simple_messaging
             pylint simple_messaging_azure
             pylint simple_messaging_dialog_support
             pylint simple_messaging_loopback
+            pylint simple_messaging_switchboard
             pylint simple_messaging_twilio
             pylint simple_research
             pylint simple_scheduling
@@ -416,11 +436,15 @@ jobs:
             pylint docker_utils
             pylint nagios_monitor
             pylint quicksilver
+            pylint simple_content
+            pylint simple_dashboard
             pylint simple_data_export
+            # pylint simple_generative_ai
             pylint simple_messaging
             pylint simple_messaging_azure
             pylint simple_messaging_dialog_support
             pylint simple_messaging_loopback
+            pylint simple_messaging_switchboard
             pylint simple_messaging_twilio
             pylint simple_research
             pylint simple_scheduling
@@ -488,11 +512,15 @@ jobs:
             pylint docker_utils
             pylint nagios_monitor
             pylint quicksilver
+            pylint simple_content
+            pylint simple_dashboard
             pylint simple_data_export
+            # pylint simple_generative_ai
             pylint simple_messaging
             pylint simple_messaging_azure
             pylint simple_messaging_dialog_support
             pylint simple_messaging_loopback
+            pylint simple_messaging_switchboard
             pylint simple_messaging_twilio
             pylint simple_research
             pylint simple_scheduling
