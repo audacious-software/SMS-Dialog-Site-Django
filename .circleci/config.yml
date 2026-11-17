@@ -48,6 +48,7 @@ jobs:
             mkdir -p media/simple_data_export_uploads
             mkdir -p media/incoming_message_media
             mkdir -p media/outgoing_message_media
+            mkdir -p media/simple_messaging_vcf_files
             python manage.py migrate
             python manage.py install_quicksilver_tasks
             python manage.py test
@@ -124,6 +125,7 @@ jobs:
             mkdir -p media/simple_data_export_uploads
             mkdir -p media/incoming_message_media
             mkdir -p media/outgoing_message_media
+            mkdir -p media/simple_messaging_vcf_files
             python manage.py migrate
             python manage.py install_quicksilver_tasks
             python manage.py test
@@ -200,6 +202,7 @@ jobs:
             mkdir -p media/simple_data_export_uploads
             mkdir -p media/incoming_message_media
             mkdir -p media/outgoing_message_media
+            mkdir -p media/simple_messaging_vcf_files
             python manage.py migrate
             python manage.py install_quicksilver_tasks
             python manage.py test
@@ -276,6 +279,7 @@ jobs:
             mkdir -p media/simple_data_export_uploads
             mkdir -p media/incoming_message_media
             mkdir -p media/outgoing_message_media
+            mkdir -p media/simple_messaging_vcf_files
             python manage.py migrate
             python manage.py install_quicksilver_tasks
             python manage.py test
@@ -352,6 +356,7 @@ jobs:
             mkdir -p media/simple_data_export_uploads
             mkdir -p media/incoming_message_media
             mkdir -p media/outgoing_message_media
+            mkdir -p media/simple_messaging_vcf_files
             python manage.py migrate
             python manage.py install_quicksilver_tasks
             python manage.py test
@@ -428,6 +433,7 @@ jobs:
             mkdir -p media/simple_data_export_uploads
             mkdir -p media/incoming_message_media
             mkdir -p media/outgoing_message_media
+            mkdir -p media/simple_messaging_vcf_files
             python manage.py migrate
             python manage.py install_quicksilver_tasks
             python manage.py test
@@ -504,6 +510,7 @@ jobs:
             mkdir -p media/simple_data_export_uploads
             mkdir -p media/incoming_message_media
             mkdir -p media/outgoing_message_media
+            mkdir -p media/simple_messaging_vcf_files
             python manage.py migrate
             python manage.py install_quicksilver_tasks
             python manage.py test
