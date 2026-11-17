@@ -32,7 +32,6 @@ admin.site.enable_nav_sidebar = False
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('markdownfield/', include('markdownfield.urls')),
     url('^accounts/', include('django.contrib.auth.urls')),
     url('^builder/', include('django_dialog_engine_builder.urls')),
     url('^messages/', include('simple_messaging.urls')),
@@ -47,6 +46,9 @@ urlpatterns = [
     url('', include('simple_content.urls')),
     url(r'^$', RedirectView.as_view(pattern_name='simple_dashboard_home', permanent=False)),
 ]
+
+if sys.version_info >= (3, 10):
+    urlpatterns.insert(1, path('markdownfield/', include('markdownfield.urls')))
 
 # if settings.DEBUG:
 #     prefix = '__debug__'
