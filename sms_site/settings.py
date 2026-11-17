@@ -27,7 +27,6 @@ SECRET_KEY = 'CHANGEME' # nosec
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -35,9 +34,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'prettyjson',
     'markdownfield',
+    'docker_utils',
+    'django.contrib.admin',
     'django_dialog_engine',
     'django_dialog_engine_builder',
-    'docker_utils',
     'nagios_monitor',
     'quicksilver',
     'simple_content',
@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'simple_messaging_dialog_support',
     'simple_messaging_twilio',
     # 'simple_messaging_azure',
-    'simple_messaging_loopback',
+    # 'simple_messaging_loopback',
     'simple_scheduling',
     'url_shortener',
     # 'debug_toolbar',

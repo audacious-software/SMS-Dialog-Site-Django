@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "botium-cli": "^1.1.0",
+    "botium-core": "^1.15.19"
+  }
+}

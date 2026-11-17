@@ -36,6 +36,7 @@ urlpatterns = [
     url('^accounts/', include('django.contrib.auth.urls')),
     url('^builder/', include('django_dialog_engine_builder.urls')),
     url('^messages/', include('simple_messaging.urls')),
+    url('^messages/channels/', include('simple_messaging_switchboard.urls')),
     url('^messages/dialog/support', include('simple_messaging_dialog_support.urls')),
     url('^dashboard/', include('simple_dashboard.urls')),
     url('^research/', include('simple_research.urls')),
