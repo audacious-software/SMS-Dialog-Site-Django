@@ -50,6 +50,7 @@ jobs:
             mkdir -p media/outgoing_message_media
             mkdir -p media/simple_messaging_vcf_files
             python manage.py migrate
+            python manage.py initialize_switchboard
             python manage.py install_quicksilver_tasks
             python manage.py test
             pylint django_dialog_engine
@@ -127,6 +128,7 @@ jobs:
             mkdir -p media/outgoing_message_media
             mkdir -p media/simple_messaging_vcf_files
             python manage.py migrate
+            python manage.py initialize_switchboard
             python manage.py install_quicksilver_tasks
             python manage.py test
             pylint django_dialog_engine
@@ -204,6 +206,7 @@ jobs:
             mkdir -p media/outgoing_message_media
             mkdir -p media/simple_messaging_vcf_files
             python manage.py migrate
+            python manage.py initialize_switchboard
             python manage.py install_quicksilver_tasks
             python manage.py test
             pylint django_dialog_engine
@@ -281,6 +284,7 @@ jobs:
             mkdir -p media/outgoing_message_media
             mkdir -p media/simple_messaging_vcf_files
             python manage.py migrate
+            python manage.py initialize_switchboard
             python manage.py install_quicksilver_tasks
             python manage.py test
             pylint django_dialog_engine
@@ -358,6 +362,7 @@ jobs:
             mkdir -p media/outgoing_message_media
             mkdir -p media/simple_messaging_vcf_files
             python manage.py migrate
+            python manage.py initialize_switchboard
             python manage.py install_quicksilver_tasks
             python manage.py test
             pylint django_dialog_engine
@@ -435,6 +440,7 @@ jobs:
             mkdir -p media/outgoing_message_media
             mkdir -p media/simple_messaging_vcf_files
             python manage.py migrate
+            python manage.py initialize_switchboard
             python manage.py install_quicksilver_tasks
             python manage.py test
             pylint django_dialog_engine
@@ -512,6 +518,7 @@ jobs:
             mkdir -p media/outgoing_message_media
             mkdir -p media/simple_messaging_vcf_files
             python manage.py migrate
+            python manage.py initialize_switchboard
             python manage.py install_quicksilver_tasks
             python manage.py test
             pylint django_dialog_engine
